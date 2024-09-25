@@ -1,0 +1,506 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7fafc; /* Warna latar belakang */
+}
+
+nav {
+  background-color: #ffffff; /* Warna navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan navbar */
+  position: sticky; /* Menjadikan navbar sticky */
+  top: 0; /* Menempatkan navbar di bagian atas */
+  z-index: 1000; /* Pastikan navbar berada di atas konten lainnya */
+}
+
+.container {
+  max-width: 1200px; /* Lebar maksimum navbar */
+  margin: 0 auto; /* Pusatkan navbar */
+  padding: 10px 20px; /* Padding navbar */
+  display: flex;
+  justify-content: space-between; /* Jarak antara item */
+  align-items: center; /* Vertikal center */
+}
+
+.nav-links {
+  display: flex; /* Flexbox untuk tautan */
+  gap: 20px; /* Jarak antar tautan */
+}
+
+.nav-links a {
+  text-decoration: none; /* Hapus garis bawah */
+  color: #4a5568; /* Warna teks tautan */
+  transition: color 0.3s; /* Transisi warna */
+}
+
+.nav-links a:hover {
+  color: #4299e1; /* Warna saat hover */
+}
+
+.logo {
+  font-size: 24px; /* Ukuran font logo */
+  font-weight: bold; /* Tebal font logo */
+  color: #2d3748; /* Warna teks logo */
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 60px auto; /* Menambahkan margin atas untuk jarak dari navbar */
+}
+
+.hero-left {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.pre-title {
+  font-size: 40px;
+  color: #6c757d; /* Warna abu-abu */
+  margin-bottom: 10px;
+}
+
+.hero-name {
+  font-size: 3rem; /* Ukuran font besar untuk nama */
+  font-weight: bold;
+  color: #333; /* Warna hitam */
+  margin-bottom: 20px;
+  margin-top: -10px; /* Mengangkat nama ke atas sedikit */
+}
+
+.hero-name span {
+  color: #007bff; /* Warna biru untuk nama */
+}
+
+p {
+  font-size: 1.125rem; /* Ukuran font untuk deskripsi */
+  color: #555; /* Warna abu-abu gelap */
+  line-height: 1.6; /* Jarak antar baris yang nyaman */
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-right img {
+  max-width: 60%; /* Mengubah ini untuk memperkecil gambar */
+  height: auto;
+  border-radius: 10px; /* Sudut membulat untuk gambar */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7fafc; /* Warna latar belakang */
+}
+
+nav {
+  background-color: #ffffff; /* Warna navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan navbar */
+}
+
+.container {
+  max-width: 1200px; /* Lebar maksimum navbar */
+  margin: 0 auto; /* Pusatkan navbar */
+  padding: 10px 20px; /* Padding navbar */
+  display: flex;
+  justify-content: space-between; /* Jarak antara item */
+  align-items: center; /* Vertikal center */
+}
+
+.nav-links {
+  display: flex; /* Flexbox untuk tautan */
+  gap: 20px; /* Jarak antar tautan */
+}
+
+.nav-links a {
+  text-decoration: none; /* Hapus garis bawah */
+  color: #4a5568; /* Warna teks tautan */
+  transition: color 0.3s; /* Transisi warna */
+}
+
+.nav-links a:hover {
+  color: #4299e1; /* Warna saat hover */
+}
+
+.logo {
+  font-size: 24px; /* Ukuran font logo */
+  font-weight: bold; /* Tebal font logo */
+  color: #2d3748; /* Warna teks logo */
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 20px; /* Menambahkan padding atas untuk lebih banyak jarak dari navbar */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-left {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.pre-title {
+  font-size: 40px;
+  color: #6c757d; /* Warna abu-abu */
+  margin-bottom: 10px;
+}
+
+.hero-name {
+  font-size: 3rem; /* Ukuran font besar untuk nama */
+  font-weight: bold;
+  color: #333; /* Warna hitam */
+  margin-bottom: 20px;
+  margin-top: -10px; /* Mengangkat nama ke atas sedikit */
+}
+
+.hero-name span {
+  color: #007bff; /* Warna biru untuk nama */
+}
+
+p {
+  font-size: 1.125rem; /* Ukuran font untuk deskripsi */
+  color: #555; /* Warna abu-abu gelap */
+  line-height: 1.6; /* Jarak antar baris yang nyaman */
+}
+
+/* Styling untuk tombol "Contact" */
+.contact-button {
+  display: inline-block;
+  background-color: #007bff; /* Warna biru */
+  color: #fff; /* Warna teks putih */
+  padding: 12px 24px; /* Padding di dalam tombol */
+  font-size: 1rem; /* Ukuran font */
+  font-weight: bold;
+  border-radius: 8px; /* Membulatkan sudut tombol */
+  text-decoration: none; /* Menghilangkan garis bawah pada link */
+  margin-top: -20px; /* Jarak antara paragraf dan tombol */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Bayangan pada tombol */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Efek transisi */
+}
+
+/* Efek hover pada tombol "Contact" */
+.contact-button:hover {
+  background-color: #0056b3; /* Warna lebih gelap saat dihover */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Bayangan lebih besar saat dihover */
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-right img {
+  max-width: 60%; /* Mengubah ini untuk memperkecil gambar */
+  height: auto;
+  border-radius: 10px; /* Sudut membulat untuk gambar */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+.about-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-icons {
+  display: flex;
+  justify-content: space-between; /* Membuat icon-box tersebar merata */
+  gap: 20px; /* Jarak antara icon-box */
+  width: 100%; /* Pastikan kotak-kotak berjejer menempati seluruh lebar */
+  max-width: 1200px; /* Membatasi lebar maksimal agar tidak terlalu lebar */
+}
+
+.icon-box {
+  background-color: #fff;
+  padding: 20px;
+  flex: 1; /* Setiap icon-box akan memiliki ukuran yang sama */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.icon-box:hover {
+  transform: translateY(-10px); /* Menambahkan sedikit animasi hover */
+}
+
+.icon {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.icon-box h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.icon-box p {
+  font-size: 14px;
+  color: #555;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.experience-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.experience-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 40px;
+  text-transform: uppercase; /* Mengubah teks menjadi huruf kapital */
+  letter-spacing: 1px; /* Jarak antar huruf */
+}
+
+.experience-item {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px; /* Sudut yang lebih melengkung */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan yang lebih dalam */
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi yang lebih halus */
+  position: relative; /* Posisi relatif untuk efek overlay */
+  overflow: hidden; /* Mencegah konten meluap */
+}
+
+.experience-item:hover {
+  transform: translateY(-5px); /* Efek hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan saat hover */
+}
+
+.job-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px; /* Margin bawah */
+}
+
+.company-name {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 5px; /* Margin bawah */
+  font-style: italic; /* Menggunakan gaya miring untuk nama perusahaan */
+}
+
+.duration {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.responsibilities {
+  list-style: disc;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.responsibilities li {
+  margin-bottom: 5px;
+  position: relative; /* Posisi relatif untuk penambahan ikon */
+  padding-left: 20px; /* Memberi ruang untuk ikon */
+}
+
+.responsibilities li::marker {
+  content: "✔"; /* Mengubah marker daftar menjadi centang */
+  color: #007bff; /* Warna centang */
+  font-size: 16px; /* Ukuran centang */
+  margin-right: 5px; /* Ruang antara centang dan teks */
+}
+
+.projects-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.projects-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Jarak antar proyek */
+}
+
+.project-item {
+  display: flex;
+  align-items: flex-start;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px); /* Menambahkan efek hover */
+}
+
+.project-item .emoji {
+  font-size: 50px; /* Ukuran emoji */
+  margin-right: 15px; /* Jarak antara emoji dan teks */
+}
+
+.project-item h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px; /* Jarak antara judul dan paragraf */
+  line-height: 1.2; /* Tinggi baris untuk judul */
+}
+
+.project-type {
+  display: block; /* Membuat "Development" berada di bawah nama proyek */
+  font-size: 16px;
+  color: #666;
+}
+
+.contacts-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.contacts-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Jarak antar item kontak */
+  align-items: center; /* Mengatur posisi item di tengah */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 100%; /* Memastikan lebar item sama */
+  max-width: 400px; /* Batas lebar maksimum */
+}
+
+.contact-item:hover {
+  transform: translateY(-5px); /* Efek hover */
+}
+
+.contact-item .icon {
+  font-size: 30px; /* Ukuran ikon */
+  margin-right: 15px; /* Jarak antara ikon dan teks */
+  margin-bottom: 2px; /* Sedikit turun ke bawah */
+}
+
+.contact-item a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none; /* Menghilangkan garis bawah */
+  display: flex; /* Menjadikan elemen anchor menjadi flex container */
+  align-items: center; /* Memastikan teks sejajar dengan ikon */
+}
+
+.contact-item a:hover {
+  text-decoration: underline; /* Garis bawah saat hover */
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer p {
+  color: #ccc;
+  margin: 5px 0;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 5px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #ffa500; /* Warna saat hover */
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.social-icon:hover {
+  color: #ffa500; /* Warna saat hover */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 14px;
+}

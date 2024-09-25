@@ -1,0 +1,117 @@
+/* Responsive Styles for Mobile Devices */
+@media screen and (max-width: 768px) {
+  /* Navigation */
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links {
+    display: none; /* Hide navigation links by default */
+  }
+  .logo {
+    display: none; /* Sembunyikan logo di tampilan mobile */
+    margin-bottom: 1rem; /* Add space between logo and menu button */
+  }
+  
+  /* Hero Section */
+  #hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-left,
+  .hero-right {
+    width: 100%;
+    padding: 1rem;
+  }
+  .hero-right img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover; /* Ensure image fills the container */
+    margin-bottom: 2rem;
+  }
+  .hero-name span {
+    font-size: 2rem;
+  }
+
+  /* About Section */
+  .about-icons {
+    flex-direction: column; /* Stack icons vertically */
+  }
+  .icon-box {
+    margin-bottom: 2rem;
+  }
+
+  /* Experience Section */
+  .experience-content {
+    flex-direction: column; /* Stack experience items vertically */
+  }
+  .experience-item {
+    margin-bottom: 2rem;
+  }
+
+  /* Projects Section */
+  .projects-content {
+    flex-direction: column; /* Stack projects vertically */
+  }
+  .project-item {
+    margin-bottom: 2rem;
+  }
+
+  /* Contact Section */
+  .contacts-content {
+    flex-direction: column; /* Stack contact items vertically */
+  }
+  .contact-item {
+    margin-bottom: 1rem;
+  }
+  .contact-item a {
+    display: block; /* Make links take up full width */
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  /* Footer Section */
+  .footer-container {
+    flex-direction: column; /* Stack footer sections vertically */
+    text-align: center; /* Center text */
+  }
+  .footer-about,
+  .footer-links,
+  .footer-social,
+  .footer-contact {
+    margin-bottom: 2rem;
+  }
+  .social-icons {
+    justify-content: center; /* Center social icons */
+  }
+  .social-icon {
+    margin: 0 0.5rem; /* Add space between social icons */
+  }
+}
+
+/* Responsive Styles for Tablet Devices */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Navigation */
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links a {
+    margin-bottom: 1rem; /* Add space between navigation links */
+  }
+
+  /* Hero Section */
+  .hero-left {
+    width: 50%;
+  }
+  .hero-right {
+    width: 50%;
+  }
+  .hero-right img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+}
