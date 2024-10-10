@@ -2,23 +2,29 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Send Message</title>
     <style>
       body {
         font-family: Arial, sans-serif;
-        background-color: #f7fafc;
+        background-color: #f4f4f9; /* Warna background terang */
+        color: #333;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
+        margin: 0;
+        padding: 0;
       }
 
       .container {
-        width: 600px;
-        background-color: #fff;
+        width: 90%;
+        max-width: 500px; /* Ukuran maksimal untuk layar lebih besar */
+        background-color: #fff; /* Warna latar form lebih terang */
         border-radius: 10px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         padding: 20px;
+        box-sizing: border-box;
       }
 
       form {
@@ -29,56 +35,68 @@
       label {
         margin-bottom: 10px;
         text-align: left;
+        color: #555;
       }
 
       input,
       textarea {
         width: 100%;
-        padding: 10px;
+        padding: 12px;
         margin-bottom: 20px;
-        border: 1px solid #ccc;
+        border: 1px solid #ccc; /* Border lebih terang */
         border-radius: 5px;
+        background-color: #fafafa;
+        color: #333;
+        box-sizing: border-box;
       }
 
       textarea {
         resize: none;
-        max-height: 150px;
-        position: relative;
+        height: 100px; /* Membatasi tinggi textarea */
       }
 
       button {
         background-color: #4caf50;
         color: white;
-        padding: 10px 20px;
+        padding: 12px 20px;
         border: none;
         border-radius: 5px;
         cursor: pointer;
+        font-size: 16px;
       }
 
       button:hover {
         background-color: #45a049;
       }
 
-      .error {
-        color: red;
-        font-size: 14px;
-      }
-
-      .counter {
-        font-size: 14px;
-        color: #666;
-        position: absolute;
-        top: 5px;
-        right: 10px;
-      }
-
       .textarea-wrapper {
         position: relative;
       }
 
-      @media only screen and (max-width: 600px) {
+      .counter {
+        font-size: 12px;
+        color: #999;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        background-color: #fff;
+        padding: 2px 5px;
+        border-radius: 3px;
+      }
+
+      .error {
+        color: red;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 600px) {
         .container {
-          width: 100%;
+          padding: 15px;
+        }
+
+        button {
+          padding: 12px 15px;
         }
       }
     </style>
@@ -113,6 +131,7 @@
         <button type="submit">Send</button>
       </form>
     </div>
+
     <script>
       const message = document.getElementById("message");
       const counter = document.querySelector(".counter");
