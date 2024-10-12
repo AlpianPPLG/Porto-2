@@ -421,11 +421,12 @@ html {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Tambahkan transisi untuk box-shadow */
 }
 
 .project-item:hover {
-  transform: translateY(-5px); /* Menambahkan efek hover */
+  transform: translateY(-5px) scale(1.05); /* Menambahkan efek hover dengan scale */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Mengubah bayangan saat hover */
 }
 
 .project-item .emoji {
@@ -468,13 +469,14 @@ html {
   padding: 15px 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Tambahkan transisi untuk box-shadow */
   width: 100%; /* Memastikan lebar item sama */
   max-width: 300px; /* Batas lebar maksimum */
 }
 
 .contact-item:hover {
-  transform: translateY(-5px); /* Efek hover */
+  transform: translateY(-5px) scale(1.05); /* Menambahkan efek hover dengan scale */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Mengubah bayangan saat hover */
 }
 
 .contact-item .icon {

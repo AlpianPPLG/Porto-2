@@ -12,6 +12,8 @@
       integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMX9iU6Ff8zWcDgJ7H7lW+PlH0BR9C0B8k5D5d"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   </head>
   <body>
     <nav>
@@ -410,5 +412,89 @@
         <p>&copy; 2024 Alpian. All rights reserved.</p>
       </div>
     </footer>
+    <script>
+      // GSAP Animation
+      // With ScrollTrigger
+      // Inisialisasi ScrollTrigger untuk lebih banyak kontrol
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Animasi Hero Section
+      gsap.from("#hero", {
+        opacity: 0,
+        y: 50,
+        duration: 1.2,
+        ease: "power2.out",
+      });
+
+      // Animasi About Section dengan ScrollTrigger
+      gsap.from("#about", {
+        scrollTrigger: {
+          trigger: "#about",
+          start: "top 80%", // Memulai animasi saat bagian atas about mencapai 80% dari viewport
+          toggleActions: "play none none reverse", // Animasi berbalik saat kita menggulir kembali
+        },
+        opacity: 0,
+        y: 50,
+        duration: 1.2,
+        ease: "power2.out",
+      });
+
+      // Animasi untuk Tech Stack Section dengan stagger
+      gsap.from("#skills .tech-item", {
+        scrollTrigger: {
+          trigger: "#skills",
+          start: "top 80%",
+          toggleActions: "play none none reverse", // Animasi berbalik saat kita menggulir kembali
+        },
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        ease: "power2.out",
+        stagger: 0.2,
+      });
+
+      // Animasi untuk Experience Section
+      gsap.from("#experience .experience-item", {
+        scrollTrigger: {
+          trigger: "#experience",
+          start: "top 80%",
+          toggleActions: "play none none reverse", // Animasi berbalik saat kita menggulir kembali
+        },
+        opacity: 0,
+        x: 0, // Tidak menggeser ke kiri atau kanan
+        y: 50, // Geser sedikit dari bawah ke atas
+        duration: 1.2,
+        ease: "power2.out",
+        stagger: 0.3, // Animasi bertahap
+      });
+
+      // Animasi untuk Projects Section
+      gsap.from("#projects .project-item", {
+        scrollTrigger: {
+          trigger: "#projects",
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+        },
+        opacity: 0,
+        y: 20, // Geser sedikit dari bawah
+        duration: 1.2,
+        ease: "power2.out",
+        stagger: 0.2,
+      });
+
+      // Animasi untuk Contact Section
+      gsap.from("#contacts .contact-item", {
+        scrollTrigger: {
+          trigger: "#contacts",
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+        },
+        opacity: 0,
+        y: 20, // Geser sedikit dari bawah
+        duration: 1.2,
+        ease: "power2.out",
+        stagger: 0.3,
+      });
+    </script>
   </body>
 </html>
