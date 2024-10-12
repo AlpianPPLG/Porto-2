@@ -173,6 +173,7 @@ p {
 }
 
 /* Styling untuk tombol "Contact" */
+/* Styling untuk tombol "Contact" */
 .contact-button {
   display: inline-block;
   background-color: #007bff; /* Warna biru */
@@ -182,9 +183,9 @@ p {
   font-weight: bold;
   border-radius: 8px; /* Membulatkan sudut tombol */
   text-decoration: none; /* Menghilangkan garis bawah pada link */
-  margin-top: -20px; /* Jarak antara paragraf dan tombol */
+  margin-top: 13px; /* Jarak antara paragraf dan tombol */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Bayangan pada tombol */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Efek transisi */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Efek hover pada tombol "Contact" */
@@ -204,6 +205,32 @@ p {
   height: auto;
   border-radius: 10px; /* Sudut membulat untuk gambar */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+/* Mengatur gaya dasar teks */
+.typing {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  font-family: monospace;
+}
+
+/* Mengatur animasi blink (kedip kursor) */
+@keyframes blink {
+  from,
+  to {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: black;
+  }
+}
+
+/* Tambahkan animasi kursor untuk saat mengetik */
+.typing::after {
+  content: "";
+  border-right: 2px solid black; /* Kursor hanya ditampilkan sebagai garis kecil */
+  animation: blink 1s infinite; /* Membuat efek kedip pada kursor */
 }
 
 .about-section {
@@ -469,9 +496,9 @@ html {
   padding: 15px 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Tambahkan transisi untuk box-shadow */
-  width: 100%; /* Memastikan lebar item sama */
-  max-width: 300px; /* Batas lebar maksimum */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 300px;
 }
 
 .contact-item:hover {
