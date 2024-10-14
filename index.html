@@ -18,7 +18,8 @@
   <body>
     <nav>
       <div class="container">
-        <div class="logo">Alpian</div>
+        <!-- Tambahkan id untuk logo -->
+        <div class="logo" id="logo">Alpian</div>
         <div class="nav-links" id="nav-links">
           <a href="#hero">Home</a>
           <a href="#about">About</a>
@@ -579,6 +580,11 @@
         }
 
         type(); // Memulai animasi mengetik
+      });
+
+      // Fungsi untuk me-refresh halaman ketika logo diklik
+      document.getElementById("logo").addEventListener("click", function () {
+        location.reload(); // Me-refresh halaman
       });
     </script>
   </body>
