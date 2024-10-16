@@ -206,6 +206,12 @@ p {
   height: auto;
   border-radius: 10px; /* Sudut membulat untuk gambar */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+  transition: box-shadow 0.3s ease; /* Transisi untuk smooth efek */
+}
+
+.hero-right img:hover {
+  box-shadow: 0 8px 30px rgba(106, 76, 243, 0.7),
+    0 8px 40px rgba(48, 48, 255, 0.7); /* Bayangan hitam lebih kuat saat di-hover */
 }
 
 /* Mengatur gaya dasar teks */
@@ -340,6 +346,72 @@ p {
   object-fit: contain;
 }
 
+.tech-item img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+/* HTML Icon - Merah */
+.tech-item img:hover[src*="html5"] {
+  box-shadow: 0 0 30px 10px rgba(227, 76, 38, 0.5); /* Cahaya menyebar lembut */
+}
+
+/* CSS Icon - Biru */
+.tech-item img:hover[src*="css3"] {
+  box-shadow: 0 0 30px 10px rgba(38, 77, 228, 0.5); /* Cahaya menyebar lembut */
+}
+
+/* JavaScript Icon - Kuning */
+.tech-item img:hover[src*="javascript"] {
+  box-shadow: 0 0 30px 10px rgba(247, 223, 30, 0.5); /* Cahaya menyebar lembut */
+}
+
+/* Tailwind CSS Icon - Biru Muda */
+.tech-item img:hover[src*="tailwindcss"] {
+  box-shadow: 0 0 30px 10px rgba(56, 189, 248, 0.5); /* Cahaya menyebar lembut */
+}
+
+/* Bootstrap Icon - Ungu */
+.tech-item img:hover[src*="bootstrap"] {
+  box-shadow: 0 0 30px 10px rgba(86, 61, 124, 0.5); /* Cahaya menyebar lembut */
+}
+
+/* PHP Icon - Ungu Muda */
+.tech-item img:hover[src*="php"] {
+  box-shadow: 0 0 30px 10px rgba(79, 93, 149, 0.5); /* Cahaya menyebar lembut */
+}
+
+/* React JS Icon - Biru */
+.tech-item img:hover[src*="react"] {
+  box-shadow: 0 0 30px 10px rgba(97, 219, 251, 0.5); /* Cahaya menyebar lembut */
+}
+
+/* Vue JS Icon - Hijau */
+.tech-item img:hover[src*="vuejs"] {
+  box-shadow: 0 0 30px 10px rgba(65, 184, 131, 0.5); /* Cahaya menyebar lembut */
+}
+
+/* Express JS Icon - Abu-abu */
+.tech-item img:hover[src*="express"] {
+  box-shadow: 0 0 30px 10px rgba(163, 163, 163, 0.5); /* Cahaya menyebar lembut */
+}
+
+/* Node JS Icon - Hijau Tua */
+.tech-item img:hover[src*="nodejs"] {
+  box-shadow: 0 0 30px 10px rgba(58, 119, 58, 0.5); /* Cahaya menyebar lembut */
+}
+
+/* Vite Icon - Kuning */
+.tech-item img:hover[src*="vite"] {
+  box-shadow: 0 0 30px 10px rgba(251, 208, 103, 0.5); /* Cahaya menyebar lembut */
+}
+
+/* MySQL Icon - Biru */
+.tech-item img:hover[src*="mysql"] {
+  box-shadow: 0 0 30px 10px rgba(0, 94, 139, 0.5); /* Cahaya menyebar lembut */
+}
+
 .tech-item span {
   margin-top: 10px;
   font-size: 18px;
@@ -387,12 +459,12 @@ html {
 .experience-item {
   background-color: #ffffff;
   padding: 20px;
-  border-radius: 12px; /* Sudut yang lebih melengkung */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan yang lebih dalam */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi yang lebih halus */
-  position: relative; /* Posisi relatif untuk efek overlay */
-  overflow: hidden; /* Mencegah konten meluap */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .experience-item:hover {
