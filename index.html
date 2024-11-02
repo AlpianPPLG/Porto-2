@@ -12,6 +12,10 @@
       integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMX9iU6Ff8zWcDgJ7H7lW+PlH0BR9C0B8k5D5d"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   </head>
@@ -49,6 +53,11 @@
         <img src="./img/Foto.jpg" alt="Person Standing" />
       </div>
     </section>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" onclick="scrollToHero()" title="Go to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
     <!-- About Section -->
     <section id="about" class="about-section">
@@ -583,6 +592,38 @@
       // Fungsi untuk me-refresh halaman ketika logo diklik
       document.getElementById("logo").addEventListener("click", function () {
         location.reload(); // Me-refresh halaman
+      });
+
+      // Function to show/hide the scroll-to-top button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          scrollToTopBtn.style.display = "block";
+        } else {
+          scrollToTopBtn.style.display = "none";
+        }
+      }
+
+      // Function to scroll back to the hero section
+      function scrollToHero() {
+        document.getElementById("hero").scrollIntoView({ behavior: "smooth" });
+      }
+
+      // Function to scroll back to the top of the page
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector("nav");
+        if (window.scrollY > 0) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
       });
     </script>
   </body>
