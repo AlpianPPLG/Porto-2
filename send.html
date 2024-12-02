@@ -27,6 +27,20 @@
         box-sizing: border-box;
       }
 
+      .back {
+        display: inline-block;
+        margin-bottom: 20px;
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+
+      .back:hover {
+        color: #0056b3;
+        transform: translateX(-5px);
+      }
+
       form {
         display: flex;
         flex-direction: column;
@@ -37,7 +51,7 @@
         text-align: left;
         color: #555;
       }
-      
+
       input,
       textarea {
         width: 100%;
@@ -105,6 +119,7 @@
 
   <body>
     <div class="container">
+      <a href="index.html" class="back">Kembali</a>
       <form
         action="mailto:nova07pplg@gmail.com?Subject=Hello%20from%20HTML%20Form"
         method="post"
