@@ -2,16 +2,7 @@
 @media screen and (max-width: 768px) {
   /* Navigation */
   nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .nav-links {
-    display: none; /* Hide navigation links by default */
-  }
-  .logo {
-    display: none; /* Sembunyikan logo di tampilan mobile */
-    margin-bottom: 1rem; /* Add space between logo and menu button */
+    display: none; /* Sembunyikan navbar sepenuhnya di tampilan mobile */
   }
 
   /* Hero Section */
